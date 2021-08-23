@@ -19,6 +19,8 @@ public class DetalhesController {
 	@Autowired
 	private ListarFilmeServiceImpl listarFilmesImp;
 	
+//	O valor do endpoint é inserido no local onde há a invocação da view JSP
+//	Obs: o valor do endpoint não precisa ter o mesmo nome da sua view JSP
 	@RequestMapping(value = "/detalharfilme/{id}", method = RequestMethod.GET)
 	public ModelAndView exibirDetalhesFilme(@PathVariable int id, ModelAndView model) throws ParseException {
 		FilmeViewModel filmeDetalhado = new FilmeViewModel();

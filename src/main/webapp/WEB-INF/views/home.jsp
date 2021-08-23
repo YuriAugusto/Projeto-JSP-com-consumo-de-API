@@ -26,6 +26,7 @@
 					<img src="${filme.getCaminhoDoPoster()}" class="card-img-top" alt="${filme.getTitulo()}">
 					<div class="card-body">
 						<!-- faço redirecionamento para a view de detalhes e junto a isso informo o ID do file-->
+						<!-- aqui eu passo o valor (endpoint) que irá invocar o método da controller para fazer o redirecionamento -->
 						<h5 class="card-title"><a href="detalharfilme/${filme.getId()}">${filme.getTitulo()}</a></h5>
 						<p class="card-text">${filme.getVisaoGeral()}</p>
 					</div>
